@@ -1,0 +1,385 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    scroll-behavior: smooth
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html,body {
+	line-height: 1;
+    height: 100%;
+    color: #ffffff;
+    background-color: #000000;
+    font-family: 'Source Code Pro', monospace;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*header style*/
+
+.nav{
+    background-color: transparent;
+/*    border-bottom: 1px solid #EAEAEB;*/
+    text-align: right;
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    z-index: 99;
+}
+
+.menu{
+    margin: 0 30px 0 0;
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+    line-height: 70px;
+}
+
+span{
+    color: #54d17a;
+    font-size: 30px
+}
+
+label{
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+}
+
+#toggle{
+    display: none;
+}
+
+@media only screen and (max-width: 500px){
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .menu{
+        text-align: center;
+        width: 100%;
+        display: none
+    }
+    
+    .menu a{
+        display: block;
+        border-bottom: 1px solid #ffffffa0;
+        margin: 0;     
+    }
+    
+    #toggle:checked + .menu{
+        display: block;
+    }
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: right;
+    padding: 25px 0;
+    z-index: 99;
+}
+
+header ul li a{
+    font-size: 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 40px;
+    font-family: 'Cairo', sans-serif;
+/*    visibility: hidden*/
+}
+
+#logo{
+    float: left;
+    color: limegreen;
+    margin: 0 20px;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Kaushan Script', cursive;
+}
+
+footer{
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    z-index: 99;
+}
+
+.foot{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Courier Prime', monospace
+}
+
+
+
+
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000000b0;
+    z-index: 999;
+}
+
+section{
+    padding: 60px 0;
+    height: 100%;
+    position: relative;
+}
+
+#about{
+    padding: 60px 0;
+    height: 150%;
+    position: relative;
+}
+
+#contact{
+    padding: 60px 0;
+    height: 70%;
+    position: relative;
+}
+
+.home{
+    color: #ffffff;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: url(../images/photo.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #34495e;
+    background-attachment: fixed;
+    z-index: 9;
+}
+
+
+
+/*
+#own-image{
+    display: flex;
+    margin: auto 0;
+    width: 500px;
+    height: 500px;
+    border: 3px solid green;
+    border-radius: 50%;
+    background-image: url(../images/photo1.jpeg);
+    background-attachment: fixed;
+    background-position: center
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: url(../images/photo1.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #34495e;
+    background-attachment: fixed;
+    z-index: 9;
+    width: 500px;
+    height: 500px;
+    border: 3px solid green;
+    border-radius: 50%;
+
+}
+*/
+
+.home h1{
+    padding: 2px;
+    font-size: 100px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-shadow: 0 15px 20px #000000b0;
+    margin-bottom: 0;
+    font-family: 'Cairo', sans-serif;
+}
+
+.home img{
+    border-radius: 50%;
+    width: 40%;
+    margin: 100px 0;
+    border: 6px solid #88EC46;
+    height: 40%;
+    background-size: cover
+}
+
+.home h5{
+    font-size: 30px;
+    background: green;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 10px 0 50px;
+    display: inline-block;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    font-family: 'Dancing Script', cursive;
+    
+}
+
+.section-title{
+    text-align: center;
+}
+
+.section-title h2{
+    display: inline-block;
+    font-size: 28px;
+    border-bottom: 1px solid ;
+    text-transform: uppercase;
+    padding: 0 0 10px; 
+}
+
+
+.about-info{
+    width:60%;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+    z-index: 99;
+    
+}
+
+
+
+.about-info p{
+    line-height: 30px;
+    font-size: 18px;
+    font-size: 30px;
+    line-height: 35px
+}
+
+.about-info .downloadbtn{
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: #ffffff10;
+    border: 1px solid #ffffff30;
+    border-radius: 50px;
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 50px;
+    position: relative;
+    z-index: 999
+}
+
+.timeline{
+    margin-top: 50px;
+    display: block;
+    align-content: center
+}
+
+
+.timeline .col{
+    margin: 50px;
+    padding: 25px 5px;
+    border: 1px solid #ffffff30;
+}
+
+
+.timeline h6{
+    margin: 15px 0 0 ;
+    font-size: 14px;
+    line-height: 24px;
+    font-size: 25px
+}
+
+
+.contact{
+     width: 60%;
+    margin: 0 auto;
+    padding: 50px 0;
+    z-index: 99
+    
+}
+
+.contact-info{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.contact-info .textField {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ffffff30;
+    box-sizing: border-box;
+    background-color: transparent;
+    padding: 15px 15px;
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 16px
+}
+
+.contact-info .messageField{
+    height: 200px;
+}
+
+.contact-info .submitButton{
+    background-color: #fff;
+    color: #000;
+    height: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase
+}
+
+#particles-js{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
