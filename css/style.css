@@ -127,7 +127,7 @@ header{
 }
 
 header ul li a{
-    font-size: 30px;
+    font-size: 20px;
     color: #ffffff;
     text-transform: uppercase;
     text-decoration: none;
@@ -140,7 +140,7 @@ header ul li a{
     float: left;
     color: limegreen;
     margin: 0 20px;
-    font-size: 50px;
+    font-size: 25px;
     font-weight: 600;
     font-family: 'Kaushan Script', cursive;
 }
@@ -238,8 +238,7 @@ section{
 */
 
 .home h1{
-    padding: 2px;
-    font-size: 100px;
+    font-size: 50px;
     font-weight: 500;
     text-transform: uppercase;
     text-shadow: 0 15px 20px #000000b0;
@@ -257,7 +256,7 @@ section{
 }
 
 .home h5{
-    font-size: 30px;
+    font-size: 20px;
     background: green;
     text-align: center;
     padding: 10px 20px;
