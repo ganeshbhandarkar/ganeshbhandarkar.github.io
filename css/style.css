@@ -248,11 +248,10 @@ section{
 
 .home img{
     border-radius: 50%;
-    width: 40%;
-    margin: 100px 0;
+    width: 20%;
+    margin: 40px 0;
     border: 6px solid #88EC46;
-    height: 40%;
-    background-size: cover
+    height: 20%;
 }
 
 .home h5{
