@@ -128,7 +128,7 @@ header{
 
 header ul li a{
     font-size: 20px;
-    color: #ffffff;
+    color: green;
     text-transform: uppercase;
     text-decoration: none;
     margin: 0 40px;
@@ -138,11 +138,12 @@ header ul li a{
 
 #logo{
     float: left;
-    color: limegreen;
+    color: green;
     margin: 0 20px;
-    font-size: 25px;
+    font-size: 50px;
     font-weight: 600;
-    font-family: 'Kaushan Script', cursive;
+	font-family: 'Cairo', sans-serif;
+    /*font-family: 'Kaushan Script', cursive;*/
 }
 
 footer{
@@ -197,7 +198,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    background: url(../images/photo.jpg) no-repeat;
+    background: url(../images/background.png) no-repeat;
     background-size: cover;
     background-position: center;
     background-color: #34495e;
